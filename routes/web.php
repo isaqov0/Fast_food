@@ -1,6 +1,8 @@
 <?php
-
-use Illuminate\Support\Facades\Route;
+	
+	
+	use App\Http\Controllers\FastFoodController;
+	use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +15,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [FastFoodController::class , 'index']);

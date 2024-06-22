@@ -1,4 +1,5 @@
-:root {
+body {
+    margin: 0;
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
     font-weight: 400;
@@ -90,4 +91,109 @@
     flex-direction: row;
     justify-content: center;
     gap: 12px;
+}
+
+.cards__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.heading {
+    text-align: center;
+}
+
+:root {
+    --primary-color: #e0c521;
+}
+
+.btn {
+    padding: 1rem 0.8rem;
+    font-size: 20px;
+    text-align: center;
+    border: 0;
+    outline: none;
+    border-radius: 10px;
+    width: 120px;
+    box-shadow: 1px -3px 52px -5px rgba(0, 0, 0, 0.77);
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.btn.add {
+    background-color: var(--primary-color);
+}
+
+.btn.add:hover {
+    background-color: #cab320;
+}
+
+.btn.add:active {
+    background-color: #ad9a1c;
+}
+
+.btn.remove {
+    background-color: tomato;
+}
+
+.btn.remove:hover {
+    background-color: rgb(209, 83, 61);
+}
+
+.btn.remove:active {
+    background-color: rgb(185, 73, 54);
+}
+
+.btn.checkout {
+    background-color: #47bb77c6;
+    width: 150px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.btn.checkout:hover {
+    background-color: #47bb78;
+}
+
+.btn.checkout:active {
+    background-color: rgb(30, 93, 41);
+}
+
+.btn.disabled {
+    opacity: 0.5;
+}
+
+.navbar {
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #04AA6D;
 }
